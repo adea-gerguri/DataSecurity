@@ -1,14 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="controller.SignUpController"
-            prefHeight="400.0" prefWidth="600.0">
+  This file is available and licensed under the following license:
 
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="302.0" prefWidth="600.0" style="-fx-background-color: #ececec;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SignUpController">
+    <children>
+        <ImageView fitHeight="500.0" fitWidth="607.0" layoutX="-1.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/signup.jpeg" />
+            </image>
+        </ImageView>
+        <TextField fx:id="txtFirstName" layoutX="116.0" layoutY="73.0" prefHeight="26.0" prefWidth="126.0" promptText="Type your first name" />
+        <TextField fx:id="txtLastName" layoutX="116.0" layoutY="106.0" prefHeight="26.0" prefWidth="126.0" promptText="Type your last name" />
+        <TextField fx:id="txtEmail" layoutX="116.0" layoutY="142.0" prefHeight="26.0" prefWidth="126.0" promptText="Type your email" />
+        <PasswordField fx:id="pwdPassword" layoutX="116.0" layoutY="176.0" prefHeight="26.0" prefWidth="126.0" promptText="Type your password" />
+        <PasswordField fx:id="pwdConfirmPassword" layoutX="116.0" layoutY="211.0" prefHeight="26.0" prefWidth="126.0" promptText="Repeat your password" />
+        <Text fill="WHITE" layoutX="51.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First name:" />
+        <Text fill="WHITE" layoutX="52.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last name:" />
+        <Text fill="WHITE" layoutX="74.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email:" />
+        <Text fill="WHITE" layoutX="52.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password:" />
+        <Text fill="WHITE" layoutX="14.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Confim Password:" />
+        <Button layoutX="116.0" layoutY="258.0" mnemonicParsing="false" onAction="#handleSignUp" text="Signup" />
+        <Button layoutX="190.0" layoutY="258.0" mnemonicParsing="false" onAction="#handleCancel" text="Cancel" />
+        <Text fill="WHITE" layoutX="140.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SIGN UP">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </Text>
+    </children>
 </AnchorPane>
