@@ -32,7 +32,7 @@ public class LoginController {
         System.out.println("Ka hy ne login");
 
         if (isLogin) {
-            System.out.println("fhdsfjhhsdjf");
+            System.out.println("navigate ne homepage");
             Navigator.navigate(ae, Navigator.HOME_PAGE);
         }
     }

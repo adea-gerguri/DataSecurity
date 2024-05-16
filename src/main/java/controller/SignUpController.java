@@ -7,10 +7,11 @@ import javafx.fxml.FXML;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.SplitMenuButton;
 import javafx.scene.control.TextField;
+import javafx.scene.input.MouseEvent;
 import model.dto.UserDto;
 import service.DBConnector;
 import service.UserService;
-
+import controller.HomeController;
 import java.sql.*;
 
 public class SignUpController {
@@ -24,7 +25,13 @@ public class SignUpController {
     private PasswordField pwdPassword;
     @FXML
     private PasswordField pwdConfirmPassword;
+    @FXML
+    private TextField txtSuggested;
 
+    @FXML
+    private void initialize() {
+        txtSuggested.setText(generateStrongPassword());
+    }
     @FXML
     private void handleSignUp(ActionEvent ae) {
         String firstName = txtFirstName.getText();
@@ -60,4 +67,29 @@ public class SignUpController {
         pwdPassword.clear();
         pwdConfirmPassword.clear();
     }
+    private String generateStrongPassword() {
+        String password = "";
+        for (int i = 0; i < 10; i++) {
+            password += (char) ((int) (Math.random() * 26) + generateRandomSpecialChar() +
+                    generateRandomUppercaseLetter() +
+                    generateRandomSpecialChar() +
+                    generateRandomUppercaseLetter());
+        }
+        return password;
+    }
+    public char generateRandomSpecialChar() {
+        int minAscii = 33;
+        int maxAscii = 126;
+        int randomAscii = (int) (Math.random() * (maxAscii - minAscii + 1) + minAscii);
+        return (char) randomAscii;
+    }
+
+    private char generateRandomUppercaseLetter() {
+        int minAscii = 65;
+        int maxAscii = 90;
+        int randomAscii = (int) (Math.random() * (maxAscii - minAscii + 1) + minAscii);
+        return (char) randomAscii;
+    }
+
+
 }

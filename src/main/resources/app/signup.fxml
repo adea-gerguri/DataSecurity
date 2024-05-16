@@ -1,4 +1,3 @@
-
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!--
@@ -44,27 +43,29 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="302.0" prefWidth="600.0" style="-fx-background-color: #ececec;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SignUpController">
     <children>
-        <ImageView fitHeight="500.0" fitWidth="607.0" layoutX="-1.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fitHeight="360.0" fitWidth="607.0" layoutX="-1.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@../images/signup.jpeg" />
             </image>
         </ImageView>
-        <TextField fx:id="txtFirstName" layoutX="116.0" layoutY="73.0" prefHeight="26.0" prefWidth="126.0" promptText="Type your first name" />
-        <TextField fx:id="txtLastName" layoutX="116.0" layoutY="106.0" prefHeight="26.0" prefWidth="126.0" promptText="Type your last name" />
-        <TextField fx:id="txtEmail" layoutX="116.0" layoutY="142.0" prefHeight="26.0" prefWidth="126.0" promptText="Type your email" />
-        <PasswordField fx:id="pwdPassword" layoutX="116.0" layoutY="176.0" prefHeight="26.0" prefWidth="126.0" promptText="Type your password" />
-        <PasswordField fx:id="pwdConfirmPassword" layoutX="116.0" layoutY="211.0" prefHeight="26.0" prefWidth="126.0" promptText="Repeat your password" />
-        <Text fill="WHITE" layoutX="51.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First name:" />
-        <Text fill="WHITE" layoutX="52.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last name:" />
-        <Text fill="WHITE" layoutX="74.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email:" />
-        <Text fill="WHITE" layoutX="52.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password:" />
-        <Text fill="WHITE" layoutX="14.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Confim Password:" />
-        <Button layoutX="116.0" layoutY="258.0" mnemonicParsing="false" onAction="#handleSignUp" text="Signup" />
+        <TextField fx:id="txtFirstName" layoutX="116.0" layoutY="50.0" prefHeight="26.0" prefWidth="126.0" promptText="Type your first name" />
+        <TextField fx:id="txtLastName" layoutX="116.0" layoutY="83.0" prefHeight="26.0" prefWidth="126.0" promptText="Type your last name" />
+        <TextField fx:id="txtEmail" layoutX="116.0" layoutY="117.0" prefHeight="26.0" prefWidth="126.0" promptText="Type your email" />
+        <PasswordField fx:id="pwdPassword" layoutX="116.0" layoutY="182.0" prefHeight="26.0" prefWidth="126.0" promptText="Type your password" />
+        <PasswordField fx:id="pwdConfirmPassword" layoutX="116.0" layoutY="214.0" prefHeight="26.0" prefWidth="126.0" promptText="Repeat your password" />
+        <Text fill="WHITE" layoutX="49.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First name:" />
+        <Text fill="WHITE" layoutX="50.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last name:" />
+        <Text fill="WHITE" layoutX="78.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email:" />
+        <Text fill="WHITE" layoutX="56.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password:" />
+        <Text fill="WHITE" layoutX="14.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Confim Password:" />
+        <Button layoutX="116.0" layoutY="259.0" mnemonicParsing="false" onAction="#handleSignUp" text="Signup" />
         <Button layoutX="190.0" layoutY="258.0" mnemonicParsing="false" onAction="#handleCancel" text="Cancel" />
-        <Text fill="WHITE" layoutX="140.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SIGN UP">
+        <Text fill="WHITE" layoutX="140.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SIGN UP">
             <font>
                 <Font size="21.0" />
             </font>
         </Text>
+        <Text fill="WHITE" layoutX="51.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Suggested:" />
+        <TextField fx:id="txtSuggested" layoutX="116.0" layoutY="149.0" prefHeight="26.0" prefWidth="126.0" promptText="Click suggested!" />
     </children>
 </AnchorPane>

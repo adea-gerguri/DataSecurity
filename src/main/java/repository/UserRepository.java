@@ -24,7 +24,6 @@ public class UserRepository {
             pst.setString(3, userData.getEmail());
             pst.setString(4, userData.getSalt());
             pst.setString(5, userData.getPasswordHash());
-//            pst.setString(6, userData.getSelectedRole());
             pst.execute();
             pst.close();
 //            conn.close();
@@ -49,16 +48,16 @@ public class UserRepository {
             PreparedStatement pst = connection.prepareStatement(query);
             pst.setString(1, email);
             ResultSet result = pst.executeQuery();
-            System.out.println("ESHTE NTRY");
+            System.out.println("ne try");
 
             if(result.next()){
-                System.out.println("ESHTE N'IF");
+                System.out.println("ne if");
                 return getFromResultSet(result);
 
             }
             return null;
         }catch (Exception e){
-            System.out.println("ERRORRRRR------------");
+            System.out.println("ERROR here:");
             e.printStackTrace();
             return null;
         }
