@@ -28,6 +28,8 @@ The project is organized in several packages:
 - JavaFX SDK
 - MySQL Database
 - IntelliJ IDEA ( or any other Java IDE)
+- SceneBuilder - used for creating FXML files
+- Dalle3 - used for AI image generator
 
 ### Database Setup
 1. Install MySQL and create a database named 'datasecurity'
@@ -80,12 +82,6 @@ private static String PASSWORD = "your_password";
 
 - JavaFX SDK
 - MySQL JDBC Driver
-
-## Development Tools
-
-- IntelliJ IDEA
-- SceneBuilder - used for creating FXML files
-- Dalle3 - used for AI image generator
 
 ## Authors
 
