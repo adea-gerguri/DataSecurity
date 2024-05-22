@@ -1,5 +1,7 @@
 # Password AES Application
 
+#### This is a project in Data Security course supervised by PhD.C Mërgim Hoti
+
 ## Introduction
 
 This is a password managment application built using JavaFX, following the Model-View-Controller (MVC) architecture. It provides functionalities for registration, login, password generation of three different categories (weak, medium and strong). The application uses SceneBuilder for creating FXML files and is developed using IntelliJ IDEA.
