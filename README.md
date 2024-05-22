@@ -1,6 +1,6 @@
 # Password AES Application
 
-#### This is a project in Data Security course supervised by PhD.C Mërgim Hoti
+#### This is a project by students of University of Prishtina, Faculty of Computer and Electrical Engineering in Data Security course supervised by PhD.C Mërgim Hoti
 
 ## Introduction
 
